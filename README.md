@@ -1,1 +1,1 @@
-Private useful go packages
+Private useful Go packages
