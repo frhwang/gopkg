@@ -2,13 +2,13 @@ package files
 
 import "os"
 
-// IsNotExist return true if a path isn't exist
+// IsNotExist returns true if a path isn't exist
 func IsNotExist(path string) bool {
 	_, err := os.Stat(path)
 	return os.IsNotExist(err)
 }
 
-// IsExist return true if a path is exist
+// IsExist returns true if a path is exist
 func IsExist(path string) bool {
 	return !IsNotExist(path)
 }
